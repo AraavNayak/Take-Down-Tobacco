@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UJQ-3l-Uct">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="zCS-tF-WkH">
+            <objects>
+                <viewController id="gkG-iu-Wxp" customClass="ViewController" customModule="TakeDownTobacco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EDL-MM-B1a">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YME-aS-giN">
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nQg-9D-nG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1090.3333333333333"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjf-k0-SS5">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="655.33333333333337"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Down Tobacco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUa-Fe-HRz">
+                                                        <rect key="frame" x="12.666666666666657" y="170" width="364.66666666666674" height="94.333333333333314"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ditch Tobacco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-sy-yzr">
+                                                        <rect key="frame" x="64.666666666666657" y="130" width="260.66666666666674" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" red="0.019607843140000001" green="0.72549019609999998" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUS-tr-F7Y">
+                                                        <rect key="frame" x="61.333333333333343" y="30" width="267.66666666666663" height="143.33333333333334"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oP-ZK-9k5">
+                                                        <rect key="frame" x="36" y="505" width="301" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="wov-Dz-A01"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Begin"/>
+                                                        <connections>
+                                                            <action selector="beginBtnClicked:" destination="gkG-iu-Wxp" eventType="touchUpInside" id="XKi-pW-dzH"/>
+                                                            <segue destination="ECi-O7-P2f" kind="show" identifier="ShowNextScreen" id="3Pc-YM-DAX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenPlant" translatesAutoresizingMaskIntoConstraints="NO" id="8tp-N2-egp">
+                                                        <rect key="frame" x="-45.666666666666657" y="277" width="481.33333333333326" height="207"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="bae-xq-WNv">
+                                                        <rect key="frame" x="120" y="599" width="136" height="48"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="AUS-tr-F7Y" secondAttribute="bottom" constant="482" id="07h-mn-U7Z"/>
+                                                    <constraint firstItem="6oP-ZK-9k5" firstAttribute="top" secondItem="8tp-N2-egp" secondAttribute="bottom" constant="21" id="4M5-mf-F7A"/>
+                                                    <constraint firstItem="8tp-N2-egp" firstAttribute="top" secondItem="wUa-Fe-HRz" secondAttribute="bottom" constant="12.67" id="9GZ-y0-62w"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wUa-Fe-HRz" secondAttribute="bottom" constant="391" id="AtP-x7-zef"/>
+                                                    <constraint firstItem="6oP-ZK-9k5" firstAttribute="leading" secondItem="Pjf-k0-SS5" secondAttribute="leading" constant="36" id="Fby-6i-Zxp"/>
+                                                    <constraint firstItem="8tp-N2-egp" firstAttribute="top" secondItem="Pjf-k0-SS5" secondAttribute="top" constant="277" id="Fjp-IH-1HV"/>
+                                                    <constraint firstItem="QIB-sy-yzr" firstAttribute="centerX" secondItem="Pjf-k0-SS5" secondAttribute="centerX" id="H4K-0w-2Wi"/>
+                                                    <constraint firstItem="QIB-sy-yzr" firstAttribute="top" secondItem="Pjf-k0-SS5" secondAttribute="top" constant="130" id="Nzz-xo-lYz"/>
+                                                    <constraint firstItem="AUS-tr-F7Y" firstAttribute="centerX" secondItem="Pjf-k0-SS5" secondAttribute="centerX" id="OOi-Hy-DNQ"/>
+                                                    <constraint firstItem="wUa-Fe-HRz" firstAttribute="top" secondItem="Pjf-k0-SS5" secondAttribute="top" constant="170" id="Z5Y-OJ-uoa"/>
+                                                    <constraint firstItem="wUa-Fe-HRz" firstAttribute="centerX" secondItem="Pjf-k0-SS5" secondAttribute="centerX" id="cwd-WC-EAz"/>
+                                                    <constraint firstItem="AUS-tr-F7Y" firstAttribute="top" secondItem="Pjf-k0-SS5" secondAttribute="top" constant="30" id="g2S-j1-6i3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8tp-N2-egp" secondAttribute="bottom" constant="171.33000000000001" id="l7r-k2-aqn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6oP-ZK-9k5" secondAttribute="trailing" constant="53" id="mXg-73-Vvl"/>
+                                                    <constraint firstItem="8tp-N2-egp" firstAttribute="centerX" secondItem="Pjf-k0-SS5" secondAttribute="centerX" id="wVK-Kj-OmW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-OE-1hp">
+                                                <rect key="frame" x="0.0" y="655.33333333333337" width="390" height="435.00000000000011"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfE-BB-ka2">
+                                                        <rect key="frame" x="140.66666666666666" y="49.999999999999993" width="108.66666666666666" height="102.33333333333331"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elm-WO-O70">
+                                                        <rect key="frame" x="29" y="70" width="332" height="320"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
+                                                        <string key="text">This app is dedicated to educating and empowering teenagers to reject tobacco consumption by providing comprehensive information on its harmful effects and supporting statistics. By promoting awareness and offering incentives for participation, this app equips teenagers with the knowledge and motivation needed to make informed decisions about their health, ultimately fostering a tobacco-free lifestyle.</string>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="HfE-BB-ka2" firstAttribute="top" secondItem="gh2-OE-1hp" secondAttribute="top" constant="50" id="A6g-0c-LRQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="HfE-BB-ka2" secondAttribute="bottom" constant="282.67000000000002" id="QQg-XM-QhI"/>
+                                                    <constraint firstItem="HfE-BB-ka2" firstAttribute="centerX" secondItem="gh2-OE-1hp" secondAttribute="centerX" id="ld2-ky-TG8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gh2-OE-1hp" firstAttribute="leading" secondItem="nQg-9D-nG9" secondAttribute="leading" id="59z-8d-PId"/>
+                                            <constraint firstItem="gh2-OE-1hp" firstAttribute="top" secondItem="Pjf-k0-SS5" secondAttribute="bottom" id="Q92-ky-Ni8"/>
+                                            <constraint firstAttribute="trailing" secondItem="gh2-OE-1hp" secondAttribute="trailing" id="X4d-RU-Mw4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pjf-k0-SS5" secondAttribute="trailing" id="XSQ-GW-SOF"/>
+                                            <constraint firstItem="Pjf-k0-SS5" firstAttribute="leading" secondItem="nQg-9D-nG9" secondAttribute="leading" id="bYc-8D-CZf"/>
+                                            <constraint firstItem="Pjf-k0-SS5" firstAttribute="top" secondItem="nQg-9D-nG9" secondAttribute="top" id="dtO-W6-jjJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="gh2-OE-1hp" secondAttribute="bottom" id="m88-Hl-rOD"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nQg-9D-nG9" secondAttribute="bottom" id="0wL-YL-VsA"/>
+                                    <constraint firstItem="nQg-9D-nG9" firstAttribute="width" secondItem="YME-aS-giN" secondAttribute="width" id="6jM-kx-7wb"/>
+                                    <constraint firstItem="nQg-9D-nG9" firstAttribute="top" secondItem="YME-aS-giN" secondAttribute="top" id="KOc-0z-6BL"/>
+                                    <constraint firstAttribute="trailing" secondItem="nQg-9D-nG9" secondAttribute="trailing" id="dLH-gS-pXd"/>
+                                    <constraint firstItem="nQg-9D-nG9" firstAttribute="leading" secondItem="YME-aS-giN" secondAttribute="leading" id="iC4-l3-iNs"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="EXO-7P-qQq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="CfV-Lo-YJj"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tcO-ps-Yhc"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YME-aS-giN" firstAttribute="top" secondItem="tcO-ps-Yhc" secondAttribute="top" id="4dH-3L-WH3"/>
+                            <constraint firstAttribute="bottom" secondItem="YME-aS-giN" secondAttribute="bottom" id="4eq-oa-N7A"/>
+                            <constraint firstItem="YME-aS-giN" firstAttribute="leading" secondItem="tcO-ps-Yhc" secondAttribute="leading" id="UFY-Js-THv"/>
+                            <constraint firstItem="YME-aS-giN" firstAttribute="width" secondItem="tcO-ps-Yhc" secondAttribute="width" id="Uwh-TU-fpV"/>
+                            <constraint firstItem="YME-aS-giN" firstAttribute="trailing" secondItem="tcO-ps-Yhc" secondAttribute="trailing" id="z6y-Zv-ez5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="qAz-zj-c9I"/>
+                    <connections>
+                        <outlet property="arrowDown" destination="bae-xq-WNv" id="P1L-U4-nHh"/>
+                        <outlet property="beginBtn" destination="6oP-ZK-9k5" id="UuL-yg-YEw"/>
+                        <outlet property="bottomView" destination="gh2-OE-1hp" id="Mdw-vE-3VQ"/>
+                        <outlet property="chooseHealthHeader" destination="AUS-tr-F7Y" id="oal-Hq-j9g"/>
+                        <outlet property="ditchTobaccoHeader" destination="QIB-sy-yzr" id="U8l-rl-Lh4"/>
+                        <outlet property="plantIcon" destination="8tp-N2-egp" id="jof-B3-snk"/>
+                        <outlet property="stackView" destination="nQg-9D-nG9" id="rLi-jG-pla"/>
+                        <outlet property="takeDownTobaccoHeader" destination="wUa-Fe-HRz" id="RH6-0J-Oe7"/>
+                        <outlet property="topView" destination="Pjf-k0-SS5" id="xLI-K7-0Fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-Sj-cRa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1827.6923076923076" y="-18.48341232227488"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="BNw-Jo-avx">
+            <objects>
+                <viewController id="YjZ-lK-RZ3" customClass="StatsVC" customModule="TakeDownTobacco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RIl-IP-OOk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Harsh Realities of Tobacco" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwD-s8-w74">
+                                <rect key="frame" x="52" y="62" width="288" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Over 90% of lung cancers are caused by smoking and tobacco consumption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smn-c0-v1C">
+                                <rect key="frame" x="33" y="375" width="319" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intaking tobacco causes blood vessels to thicken and narrow, increasing likelihood of stroke, heart disease, and COPD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tib-5T-I97">
+                                <rect key="frame" x="33" y="456" width="327" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tobacco consumption causes over 7,000,000 deaths every year" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYI-bn-K5V">
+                                <rect key="frame" x="33" y="307" width="327" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here's why:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAW-6F-Yem">
+                                <rect key="frame" x="44" y="266" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tobacco consumption is one of the world's LARGEST health problems and the leading cause for early death." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oj-Ti-VWv">
+                                <rect key="frame" x="42" y="142" width="309" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nz-rc-MNR">
+                                <rect key="frame" x="135" y="672" width="110" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Quiz me!"/>
+                                <connections>
+                                    <action selector="quizBtnClicked:" destination="YjZ-lK-RZ3" eventType="touchUpInside" id="Pqw-fT-Moj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tobacco consumption increases likelihood of developing lung cancer by 25 times" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rb-2h-C1N">
+                                <rect key="frame" x="33" y="553" width="341" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Frv-gv-LVg"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistics" image="chart.pie.fill" catalog="system" id="xPt-he-Lyh"/>
+                    <connections>
+                        <outlet property="impactOnBloodVesselStatistic" destination="tib-5T-I97" id="wVf-Sf-0GG"/>
+                        <outlet property="increasedLungCancerStatistic" destination="0rb-2h-C1N" id="MMp-m5-gag"/>
+                        <outlet property="lungCancerStatistic" destination="smn-c0-v1C" id="hHk-8F-Br7"/>
+                        <outlet property="numDeathsStatistic" destination="tYI-bn-K5V" id="3iS-nM-yDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZa-fY-0qW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.769230769230759" y="731.51658767772506"/>
+        </scene>
+        <!--Progress-->
+        <scene sceneID="qyF-NE-edD">
+            <objects>
+                <viewController id="ECi-O7-P2f" customClass="ProgressVC" customModule="TakeDownTobacco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7s-bh-2CB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNl-AU-a8H">
+                                <rect key="frame" x="105" y="70" width="180" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome back! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUs-9w-XS1">
+                                <rect key="frame" x="31" y="144" width="269" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tobacco Avoidance Streak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIs-oU-p4U">
+                                <rect key="frame" x="68" y="259" width="267" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dff-cz-gGb">
+                                <rect key="frame" x="134" y="306" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGu-fv-ef8">
+                                <rect key="frame" x="238" y="311" width="56" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oW3-Sj-I9j">
+                                <rect key="frame" x="135" y="392" width="107" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check out your progress and badges earned below!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-lx-Lug">
+                                <rect key="frame" x="31" y="169" width="329" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="IFK-Ko-tzR">
+                                <rect key="frame" x="206" y="577" width="168" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="muscle" translatesAutoresizingMaskIntoConstraints="NO" id="Lki-RX-9jA">
+                                <rect key="frame" x="26" y="583" width="167" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunrise" translatesAutoresizingMaskIntoConstraints="NO" id="Fgv-sk-WzJ">
+                                <rect key="frame" x="24" y="437" width="167" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenleaf" translatesAutoresizingMaskIntoConstraints="NO" id="77U-mo-FNR">
+                                <rect key="frame" x="206" y="437" width="168" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Day Tobacco-Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNW-8h-f4p">
+                                <rect key="frame" x="26" y="544" width="158" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tobacco-Free Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqV-vG-S3k">
+                                <rect key="frame" x="222" y="696" width="129" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One Month Tobacco-Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPy-Th-HLe">
+                                <rect key="frame" x="27" y="696" width="175" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One Week Tobacco-Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cds-CW-2cW">
+                                <rect key="frame" x="206" y="544" width="169" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-Zb-3pM">
+                                <rect key="frame" x="151" y="437" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTP-70-Ztf">
+                                <rect key="frame" x="153" y="583" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk4-zz-nEw">
+                                <rect key="frame" x="334" y="578" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc5-cF-NDg">
+                                <rect key="frame" x="342" y="436" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VNa-r2-36N"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Progress" image="chart.line.uptrend.xyaxis" catalog="system" id="c2s-cc-dwc"/>
+                    <navigationItem key="navigationItem" id="WUb-tC-Orl"/>
+                    <connections>
+                        <outlet property="DayLabel" destination="6ve-Zb-3pM" id="ty8-wI-zV4"/>
+                        <outlet property="firstDayTobaccoFree" destination="Fgv-sk-WzJ" id="4iM-BD-xDD"/>
+                        <outlet property="firstMonthTobaccoFree" destination="Lki-RX-9jA" id="8ec-iI-oqv"/>
+                        <outlet property="firstWeekTobaccoFree" destination="77U-mo-FNR" id="7bU-dE-WcZ"/>
+                        <outlet property="monthLabel" destination="bTP-70-Ztf" id="oyW-mQ-8kM"/>
+                        <outlet property="numberLabel" destination="dff-cz-gGb" id="KoD-Or-r6V"/>
+                        <outlet property="tobaccoFreeYear" destination="IFK-Ko-tzR" id="zTz-r2-OpS"/>
+                        <outlet property="weekLabel" destination="Kc5-cF-NDg" id="xKz-fF-2UY"/>
+                        <outlet property="yearLabel" destination="Kk4-zz-nEw" id="2ph-gb-fPu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFQ-hi-hF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="731.51658767772506"/>
+        </scene>
+        <!--Get Help-->
+        <scene sceneID="t4T-wG-fhp">
+            <objects>
+                <viewController id="5x3-rF-4iK" customClass="GetHelpVC" customModule="TakeDownTobacco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nsb-KG-29r">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vch-GF-kTW">
+                                <rect key="frame" x="44" y="117" width="303" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration" showsTraffic="YES"/>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hHg-MQ-rMz">
+                                <rect key="frame" x="32" y="575" width="345" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total miles to be driven by car: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-UC-wCR">
+                                <rect key="frame" x="44" y="537" width="237" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6a-o5-3ju">
+                                <rect key="frame" x="288" y="537" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destination: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni3-ue-FJz">
+                                <rect key="frame" x="44" y="508" width="303" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hospitals Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juv-Vw-bD7">
+                                <rect key="frame" x="79" y="65" width="251" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u0K-SU-HBz"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Get Help" image="phone.fill" catalog="system" id="eFb-jM-kBh"/>
+                    <connections>
+                        <outlet property="destinationLabel" destination="ni3-ue-FJz" id="d4B-EZ-dQ7"/>
+                        <outlet property="directions" destination="hHg-MQ-rMz" id="foe-lb-GJd"/>
+                        <outlet property="distanceLabel" destination="A6a-o5-3ju" id="r6j-hk-EBJ"/>
+                        <outlet property="mapView" destination="vch-GF-kTW" id="7yG-fh-deh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahE-TI-QKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612.3076923076922" y="719.43127962085305"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ugG-l3-8kl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UJQ-3l-Uct" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rhP-cb-qVN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gkG-iu-Wxp" kind="relationship" relationship="viewControllers" id="doc-3k-ObD"/>
+                        <segue destination="YjZ-lK-RZ3" kind="relationship" relationship="viewControllers" id="vre-Ry-Jwm"/>
+                        <segue destination="ECi-O7-P2f" kind="relationship" relationship="viewControllers" id="VNX-Kb-8vJ"/>
+                        <segue destination="5x3-rF-4iK" kind="relationship" relationship="viewControllers" id="3KJ-Ac-0IO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpb-5i-oBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.52671755725191" y="-18.30985915492958"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Pc-YM-DAX"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="chart.line.uptrend.xyaxis" catalog="system" width="128" height="102"/>
+        <image name="chart.pie.fill" catalog="system" width="128" height="123"/>
+        <image name="file" width="128" height="122"/>
+        <image name="greenPlant" width="481" height="519"/>
+        <image name="greenleaf" width="148" height="148"/>
+        <image name="heart" width="500" height="500"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="muscle" width="540" height="540"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <image name="sunrise" width="512" height="512"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
