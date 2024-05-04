@@ -2,6 +2,8 @@
 
 App designed to help solve the crisis of widespread ignorance of harm caused by tobacco especially among teens and the lack of incentivization for youth to avoid consuming tobacco and addictive tobacco-related drugs (such as nicotine). This app achieves this purpose by educating and empowering users to reject tobacco consumption by providing comprehensive statistics on tobacco’s harmful effects and promoting tobacco avoidance by offering incentives and achievement badges for staying tobacco-free, ultimately fostering a tobacco-free lifestyle.
 
+Link to live demo: https://drive.google.com/file/d/1beuFjOSNbTEWBmCpsaPcF5ebpwkECUuu/view?usp=sharing
+
 <br>
 
 <table>
